@@ -32,36 +32,144 @@
         <section id="designing" class="mb-5">
             <h2>Designing the Layout</h2>
             <p>In web design, boxes are the first and most essential elements. These boxes are adjusted according to devices. This adjustment process is called responsiveness. Media queries are used for this purpose. A responsive design adjusts itself based on the device's dimensions.</p>
+            <pre><code class="bg-light p-3">
+/* Example of a box adjustment using media queries */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+            </code></pre>
         </section>
 
         <section id="header" class="mb-5">
             <h2>Designing the Header</h2>
             <p>Now, let’s design the header. The header design starts with setting a background color (e.g., white and purple) and text color (e.g., white). Then, we add padding to create space between the text and the box. After writing the header content, we check the design. If there’s a mistake, like padding being too much or too little, we adjust it accordingly.</p>
+            <pre><code class="bg-light p-3">
+/* Example of a header design */
+header {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+            </code></pre>
         </section>
 
         <section id="techniques" class="mb-5">
             <h2>Responsive Design Techniques</h2>
             <p>Responsive web designs can be created in 4–5 ways, including using Bootstrap, Flexbox, or CSS Grid. If you use Bootstrap, you simply add pre-defined classes, and the design becomes responsive. However, creating responsiveness manually gives you more control over the design. Flexbox properties allow you to align boxes automatically, whereas CSS Grid lets you divide the layout into rows and columns for precise control.</p>
+            <pre><code class="bg-light p-3">
+<!-- Example of using Bootstrap for responsiveness -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <!-- Content here -->
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <!-- Content here -->
+        </div>
+    </div>
+</div>
+
+/* Example of Flexbox */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Example of CSS Grid */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+            </code></pre>
         </section>
 
         <section id="menu" class="mb-5">
             <h2>Designing the Menu</h2>
             <p>Next, we’ll design the menu using a container and align its elements using Flexbox. For each menu item, we add styles, including padding, background color, and hover effects. This makes the menu interactive and visually appealing.</p>
+            <pre><code class="bg-light p-3">
+/* Example of a Flexbox menu */
+.navbar {
+    display: flex;
+    background-color: #333;
+    justify-content: space-around;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+            </code></pre>
         </section>
 
         <section id="content" class="mb-5">
             <h2>Designing the Content Section</h2>
             <p>Then, we move on to the content section. It’s structured in paragraphs (<code>&lt;p&gt;</code> tags), and the width is adjusted to ensure that it doesn’t stretch to the edges of the container. Images are also made fully responsive using the <code>width: 100%</code> property.</p>
+            <pre><code class="bg-light p-3">
+/* Example of a content section */
+.content {
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin: 0 0 10px;
+}
+
+/* Making images responsive */
+.content img {
+    width: 100%;
+    height: auto;
+}
+            </code></pre>
         </section>
 
         <section id="footer" class="mb-5">
             <h2>Designing the Footer</h2>
             <p>For the footer, we set a background color, text color, and padding to give it a neat appearance. If the design doesn’t look good initially, we adjust the spacing and styling until it’s perfect.</p>
+            <pre><code class="bg-light p-3">
+/* Example of a footer design */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+            </code></pre>
         </section>
 
         <section id="testing" class="mb-5">
             <h2>Testing Responsiveness</h2>
             <p>Finally, we test the responsiveness by resizing the browser or using different devices. If elements break or overflow, we adjust them using media queries. For example, we use <code>max-width: 768px</code> for mobile devices to ensure the layout adapts accordingly.</p>
+            <pre><code class="bg-light p-3">
+/* Example of media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+            </code></pre>
         </section>
 
         <section id="next-steps" class="mb-5">
