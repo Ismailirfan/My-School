@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Template</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the header */
+        .header {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        /* Style the main content */
+        .content {
+            padding: 20px;
+        }
+
+        /* Create three unequal columns that floats next to each other */
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+        .left {
+            width: 25%;
+        }
+
+        .middle {
+            width: 50%;
+        }
+
+        .right {
+            width: 25%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+            border-top: 2px solid #ccc;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome to My Website</h1>
+        <p>A responsive web layout using CSS</p>
+    </div>
+
+    <div class="content">
+        <div class="row">
+            <div class="column left" style="background-color:#aaa;">
+                <h2>Column 1</h2>
+                <p>Some text...</p>
+            </div>
+
+            <div class="column middle" style="background-color:#bbb;">
+                <h2>Main Content</h2>
+                <p>Here is the main content section.</p>
+            </div>
+
+            <div class="column right" style="background-color:#ccc;">
+                <h2>Column 3</h2>
+                <p>Some more text...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+#My Example code
+</body>
+</html>
