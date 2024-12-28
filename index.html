@@ -9,24 +9,16 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
             padding: 20px;
         }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
+        header, section {
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 10px;
-            background-color: #f4f4f4;
-        }
-        section {
-            margin-bottom: 30px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
         }
         h1, h2 {
             color: #333;
@@ -35,9 +27,10 @@
             color: #666;
         }
         pre {
-            background-color: #e0e0e0;
+            background-color: #e8e8e8;
             padding: 10px;
             border-radius: 5px;
+            overflow-x: auto;
         }
         iframe {
             display: block;
@@ -50,31 +43,49 @@
 <body>
     <div class="container mt-5">
         <header class="text-center mb-4">
-            <h1>Responsive Web Design Documentation</h1>
-            <p>Welcome to the guide on creating responsive web designs!</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7vyNADcfcHM?si=8CyHZq8cr3kOzhHT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="row">
+                <div class="col">
+                    <h1>Responsive Web Design Documentation</h1>
+                    <p>Welcome to the guide on creating responsive web designs!</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7vyNADcfcHM?si=8CyHZq8cr3kOzhHT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
         </header>
 
         <section id="introduction" class="mb-5">
-            <h2>Introduction</h2>
-            <p>Hello guys! Welcome to my [Music] channel. You can see this, guys. Can you create responsive designs? Not just designs but responsive ones, giving the same look and feel on all devices. You can check this out by opening this design on your mobile. It will load fully responsive. If you are creating this web design, then you are on the right track. Best of luck! If you cannot design it, follow my steps. I will guide you on how to create this web design. Subscribe to my channel. This is a responsive design for tablets. If you open this design on your tablet, you will see the same results. And if you open it on your desktop, then it will also look perfect.</p>
+            <div class="row">
+                <div class="col">
+                    <h2>Introduction</h2>
+                    <p>Hello guys! Welcome to my [Music] channel. You can see this, guys. Can you create responsive designs? Not just designs but responsive ones, giving the same look and feel on all devices. You can check this out by opening this design on your mobile. It will load fully responsive. If you are creating this web design, then you are on the right track. Best of luck! If you cannot design it, follow my steps. I will guide you on how to create this web design. Subscribe to my channel. This is a responsive design for tablets. If you open this design on your tablet, you will see the same results. And if you open it on your desktop, then it will also look perfect.</p>
+                </div>
+            </div>
         </section>
 
         <section id="overview" class="mb-5">
-            <h2>Understanding Responsiveness</h2>
-            <p>If you don't understand responsiveness, let me explain. Responsiveness means that when you open a document on any device, you won't need to scroll horizontally but vertically, making it easier to view and navigate. Let’s move to the code. Here is our code. I will guide you step-by-step on how to create this design. If you follow my steps, you won't face any issues while designing anything.</p>
+            <div class="row">
+                <div class="col">
+                    <h2>Understanding Responsiveness</h2>
+                    <p>If you don't understand responsiveness, let me explain. Responsiveness means that when you open a document on any device, you won't need to scroll horizontally but vertically, making it easier to view and navigate. Let’s move to the code. Here is our code. I will guide you step-by-step on how to create this design. If you follow my steps, you won't face any issues while designing anything.</p>
+                </div>
+            </div>
         </section>
 
         <section id="css" class="mb-5">
-            <h2>CSS Overview</h2>
-            <p>In CSS, I will show you both internal and external CSS. External CSS is usually written in the <code>&lt;head&gt;</code> section of the HTML file. I have used the <code>&lt;style&gt;</code> tag here, which is meant for CSS. Anything written within this tag will have CSS properties. Internal CSS is one of the basic tags in HTML. Here’s the <code>&lt;body&gt;</code> section. The content written in the body is what appears on the website, while the head contains meta-information.</p>
-            <p>Speaking of meta tags, they are used to define metadata. They usually have a <code>name</code> and <code>content</code> attribute to define the initial scale of a device, making the design look consistent across devices. Let’s move to the design. First, I will show you the blank design, and then we will start coding.</p>
+            <div class="row">
+                <div class="col">
+                    <h2>CSS Overview</h2>
+                    <p>In CSS, I will show you both internal and external CSS. External CSS is usually written in the <code>&lt;head&gt;</code> section of the HTML file. I have used the <code>&lt;style&gt;</code> tag here, which is meant for CSS. Anything written within this tag will have CSS properties. Internal CSS is one of the basic tags in HTML. Here’s the <code>&lt;body&gt;</code> section. The content written in the body is what appears on the website, while the head contains meta-information.</p>
+                    <p>Speaking of meta tags, they are used to define metadata. They usually have a <code>name</code> and <code>content</code> attribute to define the initial scale of a device, making the design look consistent across devices. Let’s move to the design. First, I will show you the blank design, and then we will start coding.</p>
+                </div>
+            </div>
         </section>
 
         <section id="designing" class="mb-5">
-            <h2>Designing the Layout</h2>
-            <p>In web design, boxes are the first and most essential elements. These boxes are adjusted according to devices. This adjustment process is called responsiveness. Media queries are used for this purpose. A responsive design adjusts itself based on the device's dimensions.</p>
-            <pre><code class="bg-light p-3">
+            <div class="row">
+                <div class="col">
+                    <h2>Designing the Layout</h2>
+                    <p>In web design, boxes are the first and most essential elements. These boxes are adjusted according to devices. This adjustment process is called responsiveness. Media queries are used for this purpose. A responsive design adjusts itself based on the device's dimensions.</p>
+                    <pre><code class="bg-light p-3">
 /* Example of a box adjustment using media queries */
 .container {
     width: 80%;
@@ -86,13 +97,17 @@
         width: 100%;
     }
 }
-            </code></pre>
+                    </code></pre>
+                </div>
+            </div>
         </section>
 
         <section id="header" class="mb-5">
-            <h2>Designing the Header</h2>
-            <p>Now, let’s design the header. The header design starts with setting a background color (e.g., white and purple) and text color (e.g., white). Then, we add padding to create space between the text and the box. After writing the header content, we check the design. If there’s a mistake, like padding being too much or too little, we adjust it accordingly.</p>
-            <pre><code class="bg-light p-3">
+            <div class="row">
+                <div class="col">
+                    <h2>Designing the Header</h2>
+                    <p>Now, let’s design the header. The header design starts with setting a background color (e.g., white and purple) and text color (e.g., white). Then, we add padding to create space between the text and the box. After writing the header content, we check the design. If there’s a mistake, like padding being too much or too little, we adjust it accordingly.</p>
+                    <pre><code class="bg-light p-3">
 /* Example of a header design */
 header {
     background-color: #6a1b9a;
@@ -104,13 +119,17 @@ header {
 header h1 {
     margin: 0;
 }
-            </code></pre>
+                    </code></pre>
+                </div>
+            </div>
         </section>
 
         <section id="techniques" class="mb-5">
-            <h2>Responsive Design Techniques</h2>
-            <p>Responsive web designs can be created in 4–5 ways, including using Bootstrap, Flexbox, or CSS Grid. If you use Bootstrap, you simply add pre-defined classes, and the design becomes responsive. However, creating responsiveness manually gives you more control over the design.</p>
-            <pre><code class="bg-light p-3">
+            <div class="row">
+                <div class="col">
+                    <h2>Responsive Design Techniques</h2>
+                    <p>Responsive web designs can be created in 4–5 ways, including using Bootstrap, Flexbox, or CSS Grid. If you use Bootstrap, you simply add pre-defined classes, and the design becomes responsive. However, creating responsiveness manually gives you more control over the design.</p>
+                    <pre><code class="bg-light p-3">
 <!-- Example of using Bootstrap for responsiveness -->
 <div class="container">
     <div class="row">
@@ -136,13 +155,17 @@ header h1 {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
-            </code></pre>
+                    </code></pre>
+                </div>
+            </div>
         </section>
 
         <section id="menu" class="mb-5">
-            <h2>Designing the Menu</h2>
-            <p>Next, we’ll design the menu using a container and align its elements using Flexbox. For each menu item, we add styles, including padding, background color, and hover effects. This makes the menu interactive and visually appealing.</p>
-            <pre><code class="bg-light p-3">
+            <div class="row">
+                <div class="col">
+                    <h2>Designing the Menu</h2>
+                    <p>Next, we’ll design the menu using a container and align its elements using Flexbox. For each menu item, we add styles, including padding, background color, and hover effects. This makes the menu interactive and visually appealing.</p>
+                    <pre><code class="bg-light p-3">
 /* Example of a Flexbox menu */
 .navbar {
     display: flex;
@@ -161,34 +184,13 @@ header h1 {
     background-color: #ddd;
     color: black;
 }
-            </code></pre>
+                    </code></pre>
+                </div>
+            </div>
         </section>
 
         <section id="content" class="mb-5">
-            <h2>Designing the Content Section</h2>
-            <p>Then, we move on to the content section. It’s structured in paragraphs (<code>&lt;p&gt;</code> tags), and the width is adjusted to ensure that it doesn’t stretch to the edges of the container. Images are also made fully responsive using the <code>width: 100%</code> property.</p>
-            <pre><code class="bg-light p-3">
-/* Example of a content section */
-.content {
-    padding: 20px;
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-.content p {
-    margin: 0 0 10px;
-}
-
-/* Making images responsive */
-.content img {
-    width: 100%;
-    height: auto;
-}
-            </code></pre>
-        </section>
-
-        <section id="footer" class="mb-5">
-            <h2>Designing the Footer</h2>
-            <p>For the footer, we set a background color[_{{{CITATION{{{_1{](https://github.com/david-berruezo/php-google-api/tree/31fa019e59a7156799cb033e7a002a925d18cd0b/php-google-books%2Fresults.php)
+            <div class="row">
+                <div class="col">
+                    <h2>Designing the Content Section</h2>
+                    <p>Then, we move on to the content section. It’s structured in paragraphs (<code>&lt;p&gt;</code> tags), and the width is adjusted to ensure that it doesn’t stretch to the edges of the container. Images are also made fully responsive using the <code>width: 100%</code> property[_{{{CITATION{{{_1{](https://github.com/david-berruezo/php-google-api/tree/31fa019e59a7156799cb033e7a002a925d18cd0b/php-google-books%2Fresults.php)
