@@ -1,9 +1,15 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background-color: aqua;
+    cursor: none; /* Hide default cursor */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
 }
 
 header {
@@ -11,19 +17,14 @@ header {
     color: white;
     padding: 20px 0;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-main {
-    margin-top: 50px;
-}
-
-p {
-    font-size: 18px;
-    color: #333;
-    padding: 20px;
-    background-color: white;
-    border: 2px solid #4CAF50;
-    border-radius: 10px;
-    display: inline-block;
-    cursor: url('custom-cursor.png'), auto;
+.circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    pointer-events: none; 
 }
