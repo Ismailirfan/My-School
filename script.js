@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
-    document.body.addEventListener('mousemove', (e) => {
-        let cursor = document.querySelector('.custom-cursor');
-        cursor.style.left = e.pageX - 25 + 'px';
-        cursor.style.top = e.pageY - 25 + 'px';
-    });
+document.addEventListener("mousemove", function(e) {
+    let cursor = document.getElementById("cursor");
+    let left = e.pageX - 25;
+    let top = e.pageY - 25;
+    cursor.style.left = left + 'px';
+    cursor.style.top = top + 'px';
 });
