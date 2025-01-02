@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+header, section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Examples from tutorial */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.animated-img {
+    width: 300px;
+    height: 300px;
+    transition: transform 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animated-img {
+    animation: slideIn 2s ease-in-out;
+}
+```[_{{{CITATION{{{_1{](https://github.com/antydemant/lessons-2020/tree/0c6095f45bfd841914ac8e7e25f8c9df273dea69/02-closure-and-context%2Fhomework%2FREADME.md)[_{{{CITATION{{{_2{](https://github.com/agusrichard/php-learning-notes/tree/18e3ac1fa5e2d9a339ac58d95c79bf3e9291492f/lesson-38%2Fsandbox.php)
