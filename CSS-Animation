@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn CSS Animations</title>
-    <link href="styles(3).css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -33,7 +33,7 @@
                 <div class="col">
                     <h2>Overview</h2>
                     <p>So, in this video, we'll be working on a slide show. Let's select a simple image. We'll remove the background of this image. Now, let's add an animation to this image. It's a simple process. We'll adjust the margins and make sure it fits perfectly on the screen.</p>
-                    <pre><code class="bg-light p-3">
+                    <pre><code>
 <!-- HTML example for adding an image -->
 <img src="path/to/your-image.jpg" alt="Sample Image" class="animated-img">
                     </code></pre>
@@ -46,7 +46,7 @@
                 <div class="col">
                     <h2>Responsiveness</h2>
                     <p>We'll also ensure that the animation looks good on different screen sizes, like mobile and tablet. We'll add a container to our image. This will help us control the animation's position.</p>
-                    <pre><code class="bg-light p-3">
+                    <pre><code>
 /* CSS example for responsiveness */
 .container {
     margin: 20px;
@@ -70,7 +70,7 @@
                 <div class="col">
                     <h2>Animation Effects</h2>
                     <p>Next, we'll add an animation effect. Let's try a sliding effect. We'll adjust the height and width of the animation to fit our image. We'll also adjust the timing of the animation. We want the animation to start at a specific point and end at another.</p>
-                    <pre><code class="bg-light p-3">
+                    <pre><code>
 /* CSS example for animation effects */
 @keyframes slideIn {
     from {
@@ -93,7 +93,7 @@
             <div class="row">
                 <div class="col">
                     <h2>Instructions</h2>
-                    <p>[Continues with detailed instructions on adjusting animation settings, including timing, positioning, and effects.] So, guys, that's how you create a simple animation. In my next video, I'll show you how to create more complex animations.</p>
+                    <p>So, guys, that's how you create a simple animation. In my next video, I'll show you how to create more complex animations.</p>
                 </div>
             </div>
         </section>
