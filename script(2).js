@@ -1,4 +1,4 @@
-# JavaScript (script.js)
+//# JavaScript (script.js)
 ```
 // Add event listener to navigation links
 document.addEventListener("DOMContentLoaded", function() {
