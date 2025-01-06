@@ -1,31 +1,39 @@
 //# JavaScript (script.js)
 ```
-// Add event listener to navigation links
-document.addEventListener("DOMContentLoaded", function() {
-    const navLinks = document.querySelectorAll("nav a");
-    navLinks.forEach(link => {
-        link.addEventListener("click", event => {
-            event.preventDefault();
-            const targetId = event.target.getAttribute("href").slice(1);
-            const targetElement = document.getElementById(targetId);
-            targetElement.scrollIntoView({ behavior: "smooth" });
+document.addEventListener('DOMContentLoaded', async () => {
+    async function fetchKeys() {
+        const response = await fetch('/api/get-keys');
+        return await response.json();
+    }
+
+    const keys = await fetchKeys();
+    const keyboardContainer = document.getElementById('custom-keyboard-container');
+    
+    keys.forEach(key => {
+        const button = document.createElement('button');
+        button.classList.add('key');
+        button.textContent = key;
+        keyboardContainer.appendChild(button);
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        keyboardContainer.style.top = `${e.clientY + 10}px`;
+        keyboardContainer.style.left = `${e.clientX + 10}px`;
+    });
+
+    document.getElementById('search-input').addEventListener('focus', () => {
+        keyboardContainer.style.display = 'block';
+    });
+
+    document.getElementById('search-input').addEventListener('blur', () => {
+        setTimeout(() => {
+            keyboardContainer.style.display = 'none';
+        }, 200);
+    });
+
+    document.querySelectorAll('.key').forEach(button => {
+        button.addEventListener('click', () => {
+            document.getElementById('search-input').textContent = button.textContent;
         });
     });
-});
-
-// Add event listener to search input
-const searchInput = document.getElementById('search-input');
-const searchResults = document.getElementById('search-results');
-
-searchInput.addEventListener('keyup', (e) => {
-    const searchTerm = e.target.value.trim();
-    if (searchTerm) {
-        // Here, you would typically make an API call to a search engine
-        // For demonstration purposes, we'll just display a mock result
-        const mockResult = `Search results for "${searchTerm}"...`;
-        searchResults.innerHTML = mockResult;
-        searchResults.style.display = 'block';
-    } else {
-        searchResults.style.display = 'none';
-    }
 });
